@@ -88,6 +88,12 @@ img, iframe {
   margin-right: auto;
 }
 
+hr {
+  height: 5px;
+  background-color: #eee2dc;
+  border: none;
+}
+
 /* Modifier */
 
 .border-top {
