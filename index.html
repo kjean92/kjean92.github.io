@@ -1,60 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title> Kaylena Hall | Software Engineer | Portfolio </title>
-    <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@1,700&family=Montserrat:wght@500&family=Old+Standard+TT:wght@700&family=Satisfy&display=swap" rel="stylesheet">
-		<link href= "style.css" rel="stylesheet" type="text/css" />  
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Kaylena Hall</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-																									
-	<body>
-		<header>
-			<div class="logo"> Kaylena Hall </div>
-			<hr>
-			<h3> Software Engineer </h3>
-		</header>
-											 
-	<main>
 
-		<!-- Introduction -->
-		<section>
-      <img src="images/introduction/PortfolioPic.jpeg" alt="Kaylena Hall - Profile Photo">
-			<h1> Hi, I'm Kaylena! </h1>
-				<p> I'm a software engineer living in San Diego, California. </p>
-					<p> I'm interested in:</p>
-						<ul>
-						<li> Creating engaging & satisfying designs.</li>
-						<li> Working with a range of diverse personalities. </li>
-						<li> Developing products that increase consumers' quality of life. </li>
-						</ul>																					
-		</section>
+<body>
 
-	<!-- About Me -->
-	<section>
-	<h2 class="border-top">About Me</h2>
-        	<p> Prior to learning software engineering, I worked for several years as an Emergency Medical Services dispatcher. With long, irregular hours and frequent exposure to high-stress & traumatic situations, burnout and PTSD are common amongst emergency services workers. I hope to use the skills I'm learning through <a href="http://thinkful.com"> Thinkful </a> to create a product that makes self-care and mental health resources accessible to those that need it (in a fun, gamified package). </p>
+	<header>
+		<h1>Kaylena Hall</h1>
+		<nav>
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+			<ul id="menu">
+				<li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+    </header>
+    
+    <main>
+        <!--Intro-->
+        <section>
+           <h1> Hi, I'm Kaylena! </h1>
+           <p> I'm a future software engineer living in San Diego, California.</p>
+           <p>I'm interested in:
+               <ul>
+                   <li> Creating engaging & satisfying designs.</li>
+                   <li> Working with a range of diverse personalities.</li>
+                   <li> Developing products that increase consumers' quality of life.</li>
+               </ul>
+           </p>
+        </section>
+
+        <section>
+            <h2>About Me</h2>
+            <p> Prior to learning software engineering, I worked for several years as an Emergency Medical Services dispatcher. With long, irregular hours and frequent exposure to high-stress & traumatic situations, burnout and PTSD are common amongst emergency services workers. I hope to use the skills I'm learning through <a href="http://thinkful.com"> Thinkful </a> to create a product that makes self-care and mental health resources accessible to those that need it (in a fun, gamified package). </p>
         	<p> If you think I'd be a good fit for your team (whether as a software engineer or as the newest party member for your next Dungeons & Dragons campaign), please feel free to send me a message.
-	</section>
-		
-	<!-- Contact Me -->
-	<section id="contact">
-        <h2 class="border-top">Contact Kaylena</h2>
-		<p> Feel free to contact or follow me: </p>
-          <ol>
-            <li>
-              <a href="https://www.linkedin.com/in/kaylena-hall-42a3111aa/" target="_blank"> LinkedIn </a>
-            </li>
-            <li> 
-              <a href="https://github.com/kjean92" target="_blank"> GitHub </a>
-            </li>
-		</ol> 
-      </section>
-	</main>
-    <footer> 
-      <p>&copy; Kaylena Hall </p>
-    </footer>
-    <script src="script.js"></script>
-	</body>
+        </section>
+
+        <section>
+        <!--Portfolio Content will go here once I have projects done-->
+            <h2>Portfolio</h2>
+            <p>Currently a student with Thinkful. Check back soon to see what projects I've created!</p>
+        </section>
+
+        <section>
+            <h2>Contact Me</h2>
+            <form>
+                <label for="user-name">Your name:</label>
+                <input id="user-name" type="text" name="name" />
+            </form>
+            <form>
+                <label for="city">City:</label>
+                <input id="city" type="text" name="city" required />
+            </form>
+            <form>
+                <label for="location">Zipcode:</label>
+                <input id="location" type="text" name="zipcode" autofocus="on" maxlength="5" required />
+            </form>
+            <form>
+                <label form="form-message">Your message:</label>
+                <textarea id="form-message" name="message"></textarea>
+                <button type="submit" name="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+
 </html>
